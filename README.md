@@ -1,15 +1,15 @@
-# Demo de Proyecto Final · Streamlit + Ollama + Scikit-learn
+# Proyecto Final · Streamlit + Ollama + Scikit-learn
 
 Ejemplo básico para clase del módulo **Paradigmas de Programación para Inteligencia Artificial y Análisis de Datos**.
 
 ## Caso de demostración
 
-Se utiliza el dataset de regresión **Diabetes** incluido en Scikit-learn. El CSV se genera desde `sklearn.datasets.load_diabetes(scaled=False)` y se entrega dentro de `data/diabetes_sklearn.csv`, por lo que el demo puede ejecutarse sin descargar el dataset desde Internet.
+Se utiliza el dataset de regresión **students_dropout_academic_success**. El CSV se obtiene desde `Kaggle` y se entrega dentro de `data/students_dropout_academic_success.csv`, por lo que el proyecto puede ejecutarse sin descargar el dataset desde Internet.
 
 Documentación oficial del dataset:
-https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_diabetes.html
+https://www.kaggle.com/datasets/adilshamim8/predict-students-dropout-and-academic-success
 
-> Este demo es exclusivamente académico. El dataset se utiliza para ilustrar análisis de datos y regresión; no debe interpretarse como una herramienta clínica o diagnóstica.
+> El dataset se utiliza para ilustrar análisis de datos y regresión; no debe interpretarse como una herramienta definitiva o como el modelo exclusivo para el tratamiento de datos.
 
 ## Qué demuestra
 

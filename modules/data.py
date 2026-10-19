@@ -3,7 +3,9 @@ from pathlib import Path
 import pandas as pd
 
 BASE_DIR = Path(__file__).resolve().parents[1]
-DEFAULT_CSV = BASE_DIR / "data" / "diabetes_sklearn.csv"
+#DEFAULT_CSV = BASE_DIR / "data" / "diabetes_sklearn.csv"
+#DEFAULT_CSV = BASE_DIR / "data" / "JEE_Dropout_After_Class_12.csv"
+DEFAULT_CSV = BASE_DIR / "data" / "students_dropout_academic_success.csv"
 
 
 def load_default_data() -> pd.DataFrame:

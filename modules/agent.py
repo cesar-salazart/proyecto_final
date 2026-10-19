@@ -8,7 +8,7 @@ OLLAMA_URL = "http://localhost:11434"
 class LocalDataAgent:
     """Agente simple que envía un contexto analítico resumido a Ollama."""
 
-    def __init__(self, model: str = "llama3.2:3b", base_url: str = OLLAMA_URL):
+    def __init__(self, model: str = "llama3.2:1b", base_url: str = OLLAMA_URL):
         self.model = model
         self.base_url = base_url.rstrip("/")
 
@@ -26,8 +26,8 @@ class LocalDataAgent:
             "Eres un asistente académico de análisis de datos. "
             "Responde únicamente con base en el contexto estadístico entregado. "
             "Distingue hechos observados de hipótesis. No inventes variables ni resultados. "
-            "El dataset de demostración Diabetes de Scikit-learn se usa solo con fines educativos; "
-            "no emitas diagnósticos ni recomendaciones clínicas. Responde en español, breve y técnico."
+            "El dataset de demostración Student Dropout & Success Prediction Dataset se usa solo con fines educativos; "
+            "no emitas diagnósticos ni recomendaciones de otro tipo. Responde en español, breve y técnico."
         )
         payload = {
             "model": self.model,

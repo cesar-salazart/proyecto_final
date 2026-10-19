@@ -13,15 +13,15 @@ from modules.analytics import (
 from modules.visualizations import histogram, scatter, correlation_heatmap, predicted_vs_real
 from modules.agent import LocalDataAgent, offline_summary
 
-st.set_page_config(page_title="Demo IA + Datos", page_icon="🤖", layout="wide")
+st.set_page_config(page_title="Agente IA + Datos", page_icon="🤖", layout="wide")
 
-st.title("Demo · Explorador de datos con agente local")
-st.caption("Streamlit + Scikit-learn + Ollama · ejemplo básico del Proyecto Final Integrador")
+st.title("Explorador de datos de deserción universitaria con agente local")
+st.caption("Streamlit + Scikit-learn + Ollama·")
 
 with st.sidebar:
     st.header("Configuración")
     uploaded = st.file_uploader("CSV opcional", type=["csv"])
-    model_name = st.text_input("Modelo Ollama", value="llama3.2:3b")
+    model_name = st.text_input("Modelo Ollama", value="llama3.2:1b")
 
 try:
     df = load_uploaded_data(uploaded) if uploaded else load_default_data()
@@ -71,7 +71,7 @@ with tab1:
     st.subheader("Dataset de trabajo")
     if uploaded is None:
         st.info(
-            "Dataset incluido: Diabetes de Scikit-learn, exportado como CSV con variables sin escalado. "
+            "Dataset incluido: Student Dropout & Success Prediction Dataset de Kaggle, exportado como CSV con variables sin escalado. "
             "Se usa exclusivamente como ejemplo académico de regresión."
         )
     else:
@@ -170,4 +170,4 @@ Streamlit ← modules/agent.py → Ollama local""",
     )
 
 st.markdown("---")
-st.caption("Demo académico. No constituye una herramienta clínica ni un sistema de decisión real.")
+st.caption("No constituye una herramienta definitiva ni un sistema de decisión real.")
