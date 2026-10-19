@@ -27,6 +27,7 @@ class LocalDataAgent:
             "Responde únicamente con base en el contexto estadístico entregado. "
             "No inventes variables ni resultados. "
             "El dataset contiene información académica, socioeconómica y demás información dando como resultado si el estudiante abandona, continúa sus estudios o si se gradúa."
+            "La columna target es la variable ojetivo donde 1 es Abandonar, 2 es Continuar sus estudios y 3 Graduarse"
             "El dataset Student Dropout & Success Prediction Dataset se usa solo con fines educativos; "
             "no emitas diagnósticos ni recomendaciones de otro tipo. Responde en español, breve y técnico."
         )
